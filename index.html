@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sieve — Free Email Extractor & Marketing Resource</title>
-    <meta name="description" content="Free email address extractor. Paste any text, get clean emails sorted by Gmail, Yahoo, Outlook and more. No sign-up, no limits, 100% private.">
-    
-    <style>
-        :root { --ink: #e9efe9; --ink-dim: #8fa394; --bg: #0c100d; --bg-raised: #121713; --line: #1f2922; --green: #9bffb0; }
-        body { background: var(--bg); color: var(--ink); font-family: 'JetBrains Mono', monospace; margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
-        header { border-bottom: 1px solid var(--line); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; }
-        .brand { font-weight: bold; font-size: 18px; color: var(--green); }
-        .top-nav a { color: var(--ink-dim); text-decoration: none; margin-left: 20px; font-size: 12px; }
-        .top-nav a:hover { color: var(--green); }
-        .page-layout { max-width: 800px; margin: 0 auto; padding: 50px 20px; flex: 1; }
-        .hero h1 { font-size: 2rem; }
-        .info-card { background: var(--bg-raised); padding: 20px; border: 1px solid var(--line); margin-bottom: 20px; }
-        footer { border-top: 1px solid var(--line); padding: 20px 50px; display: flex; justify-content: space-between; color: var(--ink-dim); font-size: 11px; flex-wrap: wrap; gap: 15px; }
-        footer nav a { color: var(--ink-dim); text-decoration: none; margin-left: 15px; }
-        .contact-link { color: var(--green); text-decoration: none; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sieve — Free Email Extractor & Marketing Resource</title>
+<meta name="description" content="Free email address extractor. Paste any text, get clean emails sorted by Gmail, Yahoo, Outlook and more. No sign-up. No limits. 100% private.">
+<!-- [KEEP YOUR EXISTING META TAGS, CSS, AND ADSENSE SCRIPTS HERE] -->
+<!-- ... (Keep your original <style> and <head> contents) ... -->
+<style>
+    /* ... (Your original CSS) ... */
+    /* Add this small nav adjustment to match the new links */
+    .top-nav { display:flex; gap:18px; align-items:center; font-size:11.5px; }
+    .top-nav a { color:var(--ink-dim); text-decoration:none; letter-spacing:.06em; transition:color .14s; }
+    .top-nav a:hover, .top-nav a.active { color:var(--green); }
+</style>
 </head>
 <body>
-    <header>
-        <div class="brand">Sieve</div>
-        <nav class="top-nav">
-            <a href="/">Tool</a>
-            <a href="/guides.html">Guides</a>
-            <a href="/faq.html">FAQ</a>
-            <a href="/changelog.html">Updates</a>
-        </nav>
-    </header>
 
-    <div class="page-layout">
-        <div class="hero">
-            <h1>Pour in the mess. Pull out <em>every address.</em></h1>
-            <p class="lede">Drop a list, an inbox export, a scraped page, or raw text — Sieve finds every valid email, sorts it by provider, and helps you clean your data.</p>
-        </div>
-
-        <!-- [INSERT YOUR TOOL UI LOGIC HERE] -->
-
-        <div class="info-section" style="padding-top: 40px;">
-            <div class="info-card">
-                <h2>How to Use Sieve Effectively</h2>
-                <ul>
-                    <li><strong>Bulk Extraction:</strong> Paste entire email threads, messy CSV exports, or raw web-scraped text.</li>
-                    <li><strong>Provider Sorting:</strong> Use the "Split" feature to separate leads by domain.</li>
-                    <li><strong>Privacy First:</strong> Runs locally in your browser. No data is ever uploaded.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="info-card" id="contact">
-            <h2>Contact Us</h2>
-            <p>Reach us directly by email:</p>
-            <a href="mailto:info.sieveap@proton.me" class="contact-link">✉ info.sieveap@proton.me</a>
-        </div>
+<header>
+  <div class="brand">
+    <div class="brand-text">
+      <div class="brand-mark">sieve<span>.</span></div>
+      <div class="brand-tag">email address extractor</div>
     </div>
+  </div>
+  <nav class="top-nav">
+      <a href="/" class="active">Tool</a>
+      <a href="/guides.html">Guides</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/changelog.html">Updates</a>
+  </nav>
+</header>
 
-    <footer>
-        <span>Sieve — free, private, always on.</span>
-        <nav>
-            <a href="/faq.html">FAQ</a> | 
-            <a href="/guides.html">Guides</a> | 
-            <a href="/changelog.html">Updates</a>
-        </nav>
-    </footer>
+<!-- [KEEP YOUR EXISTING HERO, WORKBENCH, AND TOOL UI CODE HERE] -->
+<!-- ... (All your original code from <div class="hero"> through the <div class="sidebar">) ... -->
+
+<!-- ABOUT + CONTACT — Adjusted for your new multi-page structure -->
+<div class="info-section">
+  <div class="info-card" id="about">
+    <h2>About Sieve</h2>
+    <p>Sieve is a free, browser-based email address extractor built for marketers and developers. Everything runs locally in your browser.</p>
+  </div>
+  <div class="info-card" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach us directly by email:</p>
+    <a href="mailto:info.sieveap@proton.me" class="contact-link">✉ info.sieveap@proton.me</a>
+  </div>
+</div>
+
+<footer style="margin-top: 50px; padding: 20px; border-top: 1px solid var(--line);">
+    <span>Sieve — free, private, always on.</span>
+    <nav style="margin-top: 10px;">
+        <a href="/faq.html">FAQ</a> | 
+        <a href="/guides.html">Guides</a> | 
+        <a href="/changelog.html">Updates</a>
+    </nav>
+</footer>
+
+<script>
+// [KEEP YOUR EXISTING JS HERE]
+</script>
 </body>
 </html>
