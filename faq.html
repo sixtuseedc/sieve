@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | Sieve Email Extractor</title>
-    <!-- Paste your CSS link or <style> block here -->
+    <style>
+        :root { --ink: #e9efe9; --ink-dim: #8fa394; --bg: #0c100d; --bg-raised: #121713; --line: #1f2922; --green: #9bffb0; }
+        body { background: var(--bg); color: var(--ink); font-family: 'JetBrains Mono', monospace; margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
+        header { border-bottom: 1px solid var(--line); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; }
+        .brand { font-weight: bold; font-size: 18px; color: var(--green); }
+        .top-nav a { color: var(--ink-dim); text-decoration: none; margin-left: 20px; font-size: 12px; }
+        .top-nav a:hover { color: var(--green); }
+        .page-layout { max-width: 800px; margin: 0 auto; padding: 50px 20px; flex: 1; }
+        footer { border-top: 1px solid var(--line); padding: 20px 50px; display: flex; justify-content: space-between; color: var(--ink-dim); font-size: 11px; flex-wrap: wrap; gap: 15px; }
+        footer nav a { color: var(--ink-dim); text-decoration: none; margin-left: 15px; }
+    </style>
 </head>
 <body>
     <header>
@@ -12,12 +22,12 @@
         <nav class="top-nav">
             <a href="/">Tool</a>
             <a href="/guides.html">Guides</a>
-            <a href="/faq.html" style="text-decoration: underline;">FAQ</a>
+            <a href="/faq.html" style="color: var(--green);">FAQ</a>
             <a href="/changelog.html">Updates</a>
         </nav>
     </header>
 
-    <main class="page-content" style="padding: 50px; max-width: 800px; margin: 0 auto;">
+    <main class="page-layout">
         <h1>Frequently Asked Questions</h1>
         <h3>Is Sieve really free?</h3>
         <p>Yes, Sieve is 100% free. We believe in providing simple tools to everyone without paywalls or hidden subscriptions.</p>
@@ -32,15 +42,12 @@
         <p>Yes, but always ensure you are complying with local anti-spam regulations like CAN-SPAM, GDPR, or CCPA. Sieve is a tool for organization, not for spamming.</p>
     </main>
 
-    <footer style="margin-top: 50px; padding: 20px; border-top: 1px solid #ccc;">
+    <footer>
         <span>Sieve — free, private, always on.</span>
         <nav>
             <a href="/faq.html">FAQ</a> | 
             <a href="/guides.html">Guides</a> | 
-            <a href="/changelog.html">Updates</a> | 
-            <a href="/privacy.html">Privacy</a> | 
-            <a href="/terms.html">Terms</a> | 
-            <a href="mailto:info.sieveap@proton.me">Contact</a>
+            <a href="/changelog.html">Updates</a>
         </nav>
     </footer>
 </body>
