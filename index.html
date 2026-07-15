@@ -1,6 +1,4 @@
-bash
 
-cat > /mnt/user-data/outputs/index.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -432,9 +430,4 @@ tick();setInterval(tick,1000);
 extract();
 </script>
 </body>
-</html>
-HTMLEOF
-echo "Done — file size: $(wc -c < /mnt/user-data/outputs/index.html) bytes"
-Output
-
-Done — file size: 33015 bytes
+</html> 
